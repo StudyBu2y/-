@@ -22,6 +22,7 @@ serverIndex = hash(key) % N # N은 서버 개수
 - 해시 테이블 크기가 조정 될 때 평균적으로 오직 **k/n 개의 키만 재배치**하는 해시 기술 (k: 키 개수, n: 슬롯 개수)
 - 해시 함수의 따라 해시 공간(hash space) 범위가 달라짐
     - 이러한 해시 공간을 구부려 해시 링(hash ring)이 만들어짐
+  
   ![hash ring](https://miro.medium.com/v2/resize:fit:1060/0*eUVMkanQ4rsAOB43)
     - SHA-1 예시를 들면, 범위는 0부터 2¹⁶⁰ - 1 에 범위를 가지게 됨
 
